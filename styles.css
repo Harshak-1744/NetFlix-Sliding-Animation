@@ -29,11 +29,11 @@ svg {
 }
 
 .netflix-text {
-    font-size: 0; /* Start with a smaller font size */
+    font-size: 0;
     color: red;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     opacity: 0;
-    animation: fadeIn 2s 1s forwards, increaseFont 1s 2s forwards; /* Apply both fadeIn and increaseFont animations */
+    animation: fadeIn 2s 1s forwards, increaseFont 1s 2s forwards; 
 }
 
 @keyframes slideIn {
@@ -62,6 +62,6 @@ svg {
 
 @keyframes increaseFont {
     to {
-        font-size: 500px; /* Increase the font size here */
+        font-size: 500px; 
     }
 }
