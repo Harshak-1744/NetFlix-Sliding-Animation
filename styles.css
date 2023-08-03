@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+svg {
+    width: 111px;
+    height: 30px;
+}
+
+.netflix-logo {
+    fill: red;
+    animation: slideIn 2s forwards;
+}
+
+.fixed-letter {
+    transform: translateX(-100%);
+}
+
+.sliding-letters path {
+    animation: slideInLetter 2s forwards;
+}
+
+.netflix-text {
+    font-size: 0; /* Start with a smaller font size */
+    color: red;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards, increaseFont 1s 2s forwards; /* Apply both fadeIn and increaseFont animations */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLetter {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes increaseFont {
+    to {
+        font-size: 500px; /* Increase the font size here */
+    }
+}
